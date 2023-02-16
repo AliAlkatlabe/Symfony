@@ -15,5 +15,14 @@ class control
             '<html><body>Lucky number is: '.$number.'</body></html>'
         );
     }
+    #[Route ('/contact')]
+    public function contact(): Response
+    {
+        $number = random_int(0, 100);
+
+        return new (
+            '<html><body>Lucky number is: '.$number.'</body></html>'
+        );
+    }
 }
 
